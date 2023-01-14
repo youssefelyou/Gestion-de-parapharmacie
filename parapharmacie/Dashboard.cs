@@ -1,4 +1,5 @@
-﻿using parapharmacie.usercontrols;
+﻿using parapharmacie.Class;
+using parapharmacie.usercontrols;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,22 @@ namespace parapharmacie
 {
     public partial class Dashboard : Form
     {
-        public Dashboard()
+        public User user = new User();
+        public Dashboard(User user)
         {
+            this.user = user;
             InitializeComponent();
+            this.onInit();
+        }
+
+        private void onInit()
+        {
+            if (this.user.Role.Equals("ADMIN"))
+            {
+                adduser.Visible = true;
+            }
+           
+           
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -30,6 +44,7 @@ namespace parapharmacie
             ajoutProd1.Visible = false;
             listeProd1.Visible = false;
             validitycheck1.Visible = false;
+            modification1.Visible = false;
             guna2Button1.PerformClick();
         }
 
@@ -65,6 +80,25 @@ namespace parapharmacie
         {
             vendre1.Visible = true;
             vendre1.BringToFront();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            addUser a = new addUser();
+            a.Show();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            modification1.Visible = true;
+            modification1.BringToFront();
         }
     }
 }

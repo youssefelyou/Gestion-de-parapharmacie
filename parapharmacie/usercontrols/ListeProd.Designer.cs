@@ -50,16 +50,16 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 35);
+            this.label1.Size = new System.Drawing.Size(186, 35);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Liste des Médicament";
+            this.label1.Text = "Liste des Produits";
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(261, 48);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(213, 48);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(33, 30);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,9 +73,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(459, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 21);
+            this.label2.Size = new System.Drawing.Size(121, 21);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Nom de Médicament";
+            this.label2.Text = "Nom de Produit";
             // 
             // guna2TextBox1
             // 

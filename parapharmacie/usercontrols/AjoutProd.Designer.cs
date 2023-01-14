@@ -57,9 +57,9 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(52, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 35);
+            this.label1.Size = new System.Drawing.Size(241, 35);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Informations de Médicament";
+            this.label1.Text = "Informations de Produit";
             // 
             // label2
             // 
@@ -67,9 +67,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(106, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 21);
+            this.label2.Size = new System.Drawing.Size(121, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nom de Médicament";
+            this.label2.Text = "Nom de Produit";
             // 
             // NomTxt
             // 
@@ -100,9 +100,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(106, 309);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 21);
+            this.label3.Size = new System.Drawing.Size(144, 21);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Numéro de Médicament";
+            this.label3.Text = "Numéro de Produit";
             // 
             // NumTxt
             // 

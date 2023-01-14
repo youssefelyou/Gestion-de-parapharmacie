@@ -78,10 +78,9 @@ namespace parapharmacie.usercontrols
             if(MessageBox.Show("Voulez vous vraiment supprimer ce produit","Confirmation suppression!",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                
-                query = "delete FROM produit where id = '" + prodId + "'";
+                query = "delete from produit where nom = '" + prodId + "'";
                 c.setData(query, "Le produit a été supprimé");
                 ListeProd_Load(this, null);
-
 
 
             }

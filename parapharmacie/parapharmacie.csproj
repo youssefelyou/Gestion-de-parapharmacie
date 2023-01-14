@@ -99,6 +99,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\User.cs" />
     <Compile Include="Connexion\MyConnexion.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -127,6 +134,12 @@
     <Compile Include="usercontrols\ListeProd.Designer.cs">
       <DependentUpon>ListeProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontrols\Modification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrols\Modification.Designer.cs">
+      <DependentUpon>Modification.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontrols\uc_dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +158,9 @@
     <Compile Include="usercontrols\vendre.Designer.cs">
       <DependentUpon>vendre.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrols\ListeProd.resx">
       <DependentUpon>ListeProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrols\Modification.resx">
+      <DependentUpon>Modification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrols\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>

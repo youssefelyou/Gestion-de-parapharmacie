@@ -45,7 +45,7 @@ namespace parapharmacie.usercontrols
                 cmd.Parameters.AddWithValue("@prix", PrixTxt.Text);
                 cmd.Parameters.AddWithValue("@quantite", QuantTxt.Text);
                 cmd.Parameters.AddWithValue("@categorie", guna2ComboBox1.SelectedItem.ToString());
-                //cmd.Parameters.AddWithValue("@categorie", surface);
+                
                 cmd.ExecuteNonQuery();
                 NomTxt.Clear();
                 NumTxt.Clear();

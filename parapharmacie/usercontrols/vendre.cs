@@ -104,7 +104,7 @@ namespace parapharmacie.usercontrols
                     label8.Text = "MAD " + totalprix.ToString();
 
                     query = "update produit set quantite='" + newQuantite + "' where nom = '" + NomTxt.Text + "'";
-                    c.setData(query, "Médicament Ajouté");
+                    c.setData(query, "Produit Ajouté");
 
                 }
                 else
@@ -138,20 +138,20 @@ namespace parapharmacie.usercontrols
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             DGVPrinter print = new DGVPrinter();
-            print.Title = "Facture de Médicament";
+            print.Title = "Facture de Produit";
             print.SubTitle = String.Format("Date: -{0}", DateTime.Now.Date);
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             print.PageNumbers = true;
             print.PageNumberInHeader = false;
             print.PorportionalColumns = true;
             print.HeaderCellAlignment = StringAlignment.Near;
-            print.Footer = "Le prix Total" + label8.Text;
+            print.Footer = "Le prix Total " + label8.Text;
             print.FooterSpacing = 15;
             print.PrintDataGridView(guna2DataGridView1);
 
 
             totalprix = 0;
-            label8.Text = "MAD. 00";
+            label8.Text = " MAD. 00";
             guna2DataGridView1.DataSource = 0;
 
         }

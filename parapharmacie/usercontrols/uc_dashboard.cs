@@ -35,19 +35,19 @@ namespace parapharmacie.usercontrols
               query = "select count(nom) from produit where date_exp >= NOW()";
               ds = c.getData(query);
               count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
-              this.chart1.Series["Médicaments validés"].Points.AddXY("Validité de Médicaments", count);
+              this.chart1.Series["Produits validés"].Points.AddXY("Validité de Produits", count);
 
                query = "select count(nom) from produit where date_exp <= NOW()";
                ds = c.getData(query);
                count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
-               this.chart1.Series["Médicaments éxpirés"].Points.AddXY("Validité de Médicaments", count);
+               this.chart1.Series["Produits éxpirés"].Points.AddXY("Validité de Produits", count);
               
     }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            chart1.Series["Médicaments validés"].Points.Clear();
-            chart1.Series["Médicaments éxpirés"].Points.Clear();
+            chart1.Series["Produits validés"].Points.Clear();
+            chart1.Series["Produits éxpirés"].Points.Clear();
             loadchart();
         }
 

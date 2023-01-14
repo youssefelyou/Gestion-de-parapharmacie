@@ -27,7 +27,7 @@ namespace parapharmacie.usercontrols
                 query = "select * from produit where date_exp >= NOW()";
                 DataSet ds = c.getData(query);
                 guna2DataGridView1.DataSource = ds.Tables[0];
-                label3.Text = "Médicaments validés";
+                label3.Text = "Produits validés";
                 label3.ForeColor = Color.Black;
             } else if(guna2ComboBox1.SelectedIndex == 1)
             {
@@ -35,7 +35,7 @@ namespace parapharmacie.usercontrols
                 query = "select * from produit where date_exp <= NOW()";
                 DataSet ds = c.getData(query);
                 guna2DataGridView1.DataSource = ds.Tables[0];
-                label3.Text = "Médicaments expirés";
+                label3.Text = "Produits expirés";
                 label3.ForeColor = Color.Black;
             }
         }

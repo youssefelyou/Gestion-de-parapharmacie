@@ -96,10 +96,10 @@
             series1.ChartArea = "ChartArea1";
             series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             series1.Legend = "Legend1";
-            series1.Name = "Médicaments éxpirés";
+            series1.Name = "Produits éxpirés";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Médicaments validés";
+            series2.Name = "Produits validés";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(453, 540);

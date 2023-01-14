@@ -1,4 +1,5 @@
 ﻿using MySqlConnector;
+using parapharmacie.Class;
 using parapharmacie.Connexion;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace parapharmacie
         private string username;
         private string password;
         private DataTable dt = new DataTable();
+        public User user = new User();
         public Login()
         {
             InitializeComponent();
@@ -48,23 +50,29 @@ namespace parapharmacie
                         data.Add(item.ToString());
                     }
                 }
-                 Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
+                User user = new User(Convert.ToInt32(data[0]), data[1], data[2], Convert.ToInt32(data[3]), data[4], data[5]);
+                if (user.Role == "ADMIN" || user.Role == "USER")
+                {
+                    Dashboard dashboard = new Dashboard(user);
+                    dashboard.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    this.errorMessage.Visible = true;
+                    this.guna2TextBox2.BorderColor = Color.Red;
+                    this.guna2TextBox1.BorderColor = Color.Red;
+                }
             }
-            else
-            {
-                this.errorMessage.Visible = true;
-                this.guna2TextBox2.BorderColor = Color.Red;
-                this.guna2TextBox1.BorderColor = Color.Red;
-            }
+
+
+
         }
 
         private void guna2PictureBox3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-      
     }
 }
