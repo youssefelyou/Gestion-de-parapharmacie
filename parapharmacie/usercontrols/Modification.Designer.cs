@@ -79,7 +79,7 @@
             "Hygiène",
             "Cosmetique",
             "Nutritif"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(677, 172);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(677, 166);
             this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(340, 36);
@@ -153,7 +153,7 @@
             this.QuantTxt.SelectedText = "";
             this.QuantTxt.Size = new System.Drawing.Size(340, 36);
             this.QuantTxt.TabIndex = 27;
-            this.QuantTxt.TextChanged += new System.EventHandler(this.QuantTxt_TextChanged);
+            
             // 
             // label6
             // 
@@ -184,7 +184,7 @@
             this.DateExp.Size = new System.Drawing.Size(340, 36);
             this.DateExp.TabIndex = 25;
             this.DateExp.Value = new System.DateTime(2023, 1, 8, 19, 45, 44, 998);
-            this.DateExp.ValueChanged += new System.EventHandler(this.DateExp_ValueChanged);
+           
             // 
             // label5uh
             // 
@@ -214,7 +214,7 @@
             this.Datepro.Size = new System.Drawing.Size(340, 36);
             this.Datepro.TabIndex = 23;
             this.Datepro.Value = new System.DateTime(2023, 1, 8, 20, 54, 1, 527);
-            this.Datepro.ValueChanged += new System.EventHandler(this.Datepro_ValueChanged);
+            
             // 
             // label4
             // 
@@ -249,7 +249,7 @@
             this.NumTxt.SelectedText = "";
             this.NumTxt.Size = new System.Drawing.Size(342, 36);
             this.NumTxt.TabIndex = 21;
-            this.NumTxt.TextChanged += new System.EventHandler(this.NumTxt_TextChanged);
+            
             // 
             // label3
             // 
@@ -284,7 +284,7 @@
             this.NomTxt.SelectedText = "";
             this.NomTxt.Size = new System.Drawing.Size(340, 36);
             this.NomTxt.TabIndex = 19;
-            this.NomTxt.TextChanged += new System.EventHandler(this.NomTxt_TextChanged);
+           
             // 
             // label2
             // 
@@ -411,7 +411,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Modification";
             this.Size = new System.Drawing.Size(1104, 770);
-            this.Load += new System.EventHandler(this.Modification_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

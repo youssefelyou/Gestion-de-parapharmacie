@@ -134,6 +134,12 @@
     <Compile Include="usercontrols\ListeProd.Designer.cs">
       <DependentUpon>ListeProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontrols\ListUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrols\ListUsers.Designer.cs">
+      <DependentUpon>ListUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontrols\Modification.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrols\ListeProd.resx">
       <DependentUpon>ListeProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrols\ListUsers.resx">
+      <DependentUpon>ListUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrols\Modification.resx">
       <DependentUpon>Modification.cs</DependentUpon>

@@ -61,6 +61,8 @@ namespace parapharmacie.usercontrols
             Dateexp.Text = ds.Tables[0].Rows[0][1].ToString();
            prixTxt.Text = ds.Tables[0].Rows[0][2].ToString();
 
+            vendre_Load(this, null);
+
         }
 
         private void QuantTxt_TextChanged(object sender, EventArgs e)
@@ -154,6 +156,11 @@ namespace parapharmacie.usercontrols
             label8.Text = " MAD. 00";
             guna2DataGridView1.DataSource = 0;
 
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            vendre_Load(this, null);
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

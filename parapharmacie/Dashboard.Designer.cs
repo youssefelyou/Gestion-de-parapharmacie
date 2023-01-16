@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.adduser = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -48,14 +49,16 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.modification1 = new parapharmacie.usercontrols.Modification();
             this.vendre1 = new parapharmacie.usercontrols.vendre();
             this.validitycheck1 = new parapharmacie.usercontrols.validitycheck();
             this.listeProd1 = new parapharmacie.usercontrols.ListeProd();
             this.ajoutProd1 = new parapharmacie.usercontrols.AjoutProd();
             this.uc_dashboard1 = new parapharmacie.usercontrols.uc_dashboard();
             this.dashboard1 = new parapharmacie.usercontrols.uc_dashboard();
-            this.modification1 = new parapharmacie.usercontrols.Modification();
+            this.listUsers1 = new parapharmacie.usercontrols.ListUsers();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adduser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -66,6 +69,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.guna2Button7);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.adduser);
             this.panel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -81,6 +85,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 780);
             this.panel1.TabIndex = 0;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button4.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button4.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button4.Location = new System.Drawing.Point(5, 429);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(263, 45);
+            this.guna2Button4.TabIndex = 12;
+            this.guna2Button4.Text = "MODIFICATION";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // adduser
             // 
@@ -99,7 +126,7 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(95, 685);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(103, 704);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(45, 46);
@@ -289,28 +316,43 @@
             // 
             this.guna2Elipse6.TargetControl = this.panel2;
             // 
-            // guna2Button4
+            // guna2Button7
             // 
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(5, 429);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(263, 45);
-            this.guna2Button4.TabIndex = 12;
-            this.guna2Button4.Text = "Modification";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button7.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button7.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
+            this.guna2Button7.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
+            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button7.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button7.Location = new System.Drawing.Point(5, 631);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.Size = new System.Drawing.Size(263, 45);
+            this.guna2Button7.TabIndex = 13;
+            this.guna2Button7.Text = "LISTE DES UTILISATEURS";
+            this.guna2Button7.Visible = false;
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.TargetControl = this.panel2;
+            // 
+            // modification1
+            // 
+            this.modification1.BackColor = System.Drawing.Color.White;
+            this.modification1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modification1.Location = new System.Drawing.Point(274, 6);
+            this.modification1.Margin = new System.Windows.Forms.Padding(4);
+            this.modification1.Name = "modification1";
+            this.modification1.Size = new System.Drawing.Size(1104, 770);
+            this.modification1.TabIndex = 16;
             // 
             // vendre1
             // 
@@ -361,15 +403,13 @@
             this.dashboard1.Size = new System.Drawing.Size(1104, 770);
             this.dashboard1.TabIndex = 1;
             // 
-            // modification1
+            // listUsers1
             // 
-            this.modification1.BackColor = System.Drawing.Color.White;
-            this.modification1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modification1.Location = new System.Drawing.Point(274, 0);
-            this.modification1.Margin = new System.Windows.Forms.Padding(4);
-            this.modification1.Name = "modification1";
-            this.modification1.Size = new System.Drawing.Size(1104, 770);
-            this.modification1.TabIndex = 16;
+            this.listUsers1.BackColor = System.Drawing.Color.White;
+            this.listUsers1.Location = new System.Drawing.Point(274, 3);
+            this.listUsers1.Name = "listUsers1";
+            this.listUsers1.Size = new System.Drawing.Size(1104, 770);
+            this.listUsers1.TabIndex = 17;
             // 
             // Dashboard
             // 
@@ -377,6 +417,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 780);
+            this.Controls.Add(this.listUsers1);
             this.Controls.Add(this.modification1);
             this.Controls.Add(this.vendre1);
             this.Controls.Add(this.validitycheck1);
@@ -427,5 +468,8 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
         private usercontrols.Modification modification1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
+        private usercontrols.ListUsers listUsers1;
     }
 }

@@ -20,36 +20,7 @@ namespace parapharmacie.usercontrols
             InitializeComponent();
         }
 
-        private void Modification_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NomTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DateExp_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NumTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QuantTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Datepro_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void PrixTxt_TextChanged(object sender, EventArgs e)
         {
 

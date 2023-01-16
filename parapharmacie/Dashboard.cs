@@ -27,6 +27,7 @@ namespace parapharmacie
             if (this.user.Role.Equals("ADMIN"))
             {
                 adduser.Visible = true;
+                guna2Button7.Visible = true;
             }
            
            
@@ -45,6 +46,7 @@ namespace parapharmacie
             listeProd1.Visible = false;
             validitycheck1.Visible = false;
             modification1.Visible = false;
+            listUsers1.Visible = false;
             guna2Button1.PerformClick();
         }
 
@@ -99,6 +101,12 @@ namespace parapharmacie
         {
             modification1.Visible = true;
             modification1.BringToFront();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            listUsers1.Visible = true;
+            listUsers1.BringToFront();
         }
     }
 }

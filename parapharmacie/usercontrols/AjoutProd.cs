@@ -51,6 +51,9 @@ namespace parapharmacie.usercontrols
                 NumTxt.Clear();
                 PrixTxt.Clear();
                 QuantTxt.Clear();
+                Datepro.ResetText();
+                DateExp.ResetText();
+                guna2ComboBox1.ResetText();
                 
             }
             else
@@ -58,6 +61,11 @@ namespace parapharmacie.usercontrols
                 MessageBox.Show("Entrer tout les champs");
             }
             
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
