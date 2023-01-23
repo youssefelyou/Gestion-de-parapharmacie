@@ -28,12 +28,13 @@ namespace parapharmacie.usercontrols
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if (NomTxt.Text != "")
+            if (IdText.Text != "")
             {
-                query="select * from produit where nom ='"+NomTxt.Text+"'";
+                query="select * from produit where id ='"+ IdText.Text + "'";
                 DataSet ds = c.getData(query);
                 if (ds.Tables[0].Rows.Count != 0)
                 {
+                    NomTxt.Text = ds.Tables[0].Rows[0][1].ToString();
                     NumTxt.Text = ds.Tables[0].Rows[0][2].ToString();
                     Datepro.Text = ds.Tables[0].Rows[0][3].ToString();
                     DateExp.Text = ds.Tables[0].Rows[0][4].ToString();

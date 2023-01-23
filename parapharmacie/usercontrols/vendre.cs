@@ -102,7 +102,7 @@ namespace parapharmacie.usercontrols
                     guna2DataGridView1.Rows[n].Cells[4].Value = QuantTxt.Text;
                     guna2DataGridView1.Rows[n].Cells[5].Value = prixtotTxt.Text;
 
-                    totalprix = totalprix + int.Parse(prixtotTxt.Text);
+                    totalprix += int.Parse(prixtotTxt.Text);
                     label8.Text = "MAD " + totalprix.ToString();
 
                     query = "update produit set quantite='" + newQuantite + "' where nom = '" + NomTxt.Text + "'";
@@ -119,8 +119,7 @@ namespace parapharmacie.usercontrols
             else
             {
                 MessageBox.Show("Choisir le produit", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-           
-   
+
         }
         }
         private void ClearAll()
@@ -163,6 +162,7 @@ namespace parapharmacie.usercontrols
             vendre_Load(this, null);
         }
 
+     
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             if(valueNom!= null)

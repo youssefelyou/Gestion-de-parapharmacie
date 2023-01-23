@@ -164,7 +164,7 @@
         5vYX0Be5jU/8J386a4T/5I+n/z1ISPgHQk6aCaeyCxoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ImprimerButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAA1FJREFUWEft
         l+1LU1Ecx0cQQfQv9D8EQfRSULa2NbekgiIifZEkWiJZlFb2oqBMZ4bpnHdzrheVRUQgtLUHH3Jqcxma
@@ -184,7 +184,7 @@
         0U9lmkKPk4AsxQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="supprimerButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABDBJREFUeF7t
         W0trE1EUju/HwgfiSheKooKo+MCFuKiKj6K5MxFCS2vunURIXSiCy4q1CiqKCy2CGzcKBf+DK1FrlUrV
@@ -226,7 +226,7 @@
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ajoutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAABDZJREFUWEft
         mNlvG0Ucxw0SEjwhVHFIQJH4C0C88IR44AFxSDzQvlTxubt27KiiIvFesXFSH3HiK7Excm2vj6Q0TeKE
